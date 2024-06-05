@@ -1,5 +1,9 @@
 package com.epam.mjc.nio;
 
+
+
+
+
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
@@ -37,8 +41,8 @@ public class FileReader {
 
 
 
-    private String [] @NotNull  getImportant( @NotNull List<String> list) {
-        String[] words = new String[4];
+    @NotNull private String []  getImportant(@NotNull List<String> list) {
+         String[] words = new String[4];
 
         words[0] = list.get(0).substring(list.get(0).indexOf(':') + 2);
         words[1] = list.get(1).substring(list.get(1).indexOf(':') + 2);
